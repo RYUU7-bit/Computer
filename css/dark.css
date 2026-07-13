@@ -1,0 +1,56 @@
+/* =====================================================
+   DARK MODE  — applied when <html data-theme="dark">
+===================================================== */
+[data-theme="dark"] {
+  --bg:        #0f172a;
+  --bg-soft:   #1e293b;
+  --bg-card:   #1e293b;
+  --text:      #f1f5f9;
+  --text-soft: #94a3b8;
+  --border:    #334155;
+  --navbar-bg: #020817;
+  --shadow:    0 4px 24px rgba(0,0,0,0.35);
+}
+
+/* inputs in dark mode */
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea,
+[data-theme="dark"] .sort-select,
+[data-theme="dark"] .search-input {
+  background: #0f172a;
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+/* auth card */
+[data-theme="dark"] .auth-card { background:#1e293b; }
+
+/* category icon active label */
+[data-theme="dark"] .cat-icon-card.active span {
+  background:#172554;
+  color:#93c5fd;
+}
+
+/* bottom nav */
+[data-theme="dark"] .bottom-nav { background:#1e293b; border-top-color:#334155; }
+
+/* modal */
+[data-theme="dark"] .modal { background:#1e293b; }
+[data-theme="dark"] .modal-close { background:#0f172a; color:#f1f5f9; }
+
+/* cart */
+[data-theme="dark"] .cart-panel  { background:#1e293b; }
+[data-theme="dark"] .cart-item   { background:#0f172a; }
+
+/* scrollbar */
+[data-theme="dark"] ::-webkit-scrollbar { width:6px; }
+[data-theme="dark"] ::-webkit-scrollbar-track { background:#0f172a; }
+[data-theme="dark"] ::-webkit-scrollbar-thumb { background:#334155; border-radius:3px; }
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover { background:#475569; }
+
+/* =====================================================
+   LIGHT MODE scrollbar
+===================================================== */
+[data-theme="light"] ::-webkit-scrollbar { width:6px; }
+[data-theme="light"] ::-webkit-scrollbar-track { background:#f1f5f9; }
+[data-theme="light"] ::-webkit-scrollbar-thumb { background:#cbd5e1; border-radius:3px; }

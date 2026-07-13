@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Category - TechZone</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/dark.css"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <a class="nav-brand" href="index.html">TechZone</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="category.html" class="active">Category</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="btn-login">Login</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9790;</button>
+      <button type="button" class="cart-btn" id="cart-btn" aria-label="Cart">Cart <span class="cart-count" id="cart-count">0</span></button>
+      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="drawer" id="drawer">
+    <div class="drawer-header">
+      <span class="nav-brand">TechZone</span>
+      <button type="button" class="drawer-close" id="drawer-close" aria-label="Close">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html">Home</a>
+      <a href="category.html" class="active">Category</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <div class="drawer-footer">
+      <button type="button" class="theme-toggle-full" id="drawer-theme">Dark Mode</button>
+    </div>
+  </aside>
+
+  <section class="cat-hero">
+    <div class="cat-hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1400&q=80')"></div>
+    <div class="cat-hero-slide" style="background-image:url('https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=1400&q=80')"></div>
+    <div class="cat-hero-slide" style="background-image:url('https://images.unsplash.com/photo-1601445638532-3c6f6c3aa1d6?w=1400&q=80')"></div>
+    <div class="cat-hero-overlay"></div>
+    <div class="cat-hero-text">
+      <h1>Our Products</h1>
+      <p>Find the perfect tech for your needs</p>
+    </div>
+  </section>
+
+  <div class="search-bar-wrap">
+    <input type="search" id="product-search" class="search-input" placeholder="Search products..." autocomplete="off"/>
+  </div>
+
+  <section class="cat-icon-row">
+    <button type="button" class="cat-icon-card active" data-filter="all">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&q=80" alt="All" loading="lazy"/>
+      <span>All</span>
+    </button>
+    <button type="button" class="cat-icon-card" data-filter="laptop">
+      <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300&q=80" alt="Laptops" loading="lazy"/>
+      <span>Laptops</span>
+    </button>
+    <button type="button" class="cat-icon-card" data-filter="desktop">
+      <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=300&q=80" alt="Desktops" loading="lazy"/>
+      <span>Desktops</span>
+    </button>
+    <button type="button" class="cat-icon-card" data-filter="accessory">
+      <img src="https://images.unsplash.com/photo-1601445638532-3c6f6c3aa1d6?w=300&q=80" alt="Accessories" loading="lazy"/>
+      <span>Accessories</span>
+    </button>
+    <button type="button" class="cat-icon-card" data-filter="component">
+      <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=300&q=80" alt="Components" loading="lazy"/>
+      <span>Components</span>
+    </button>
+  </section>
+
+  <div class="products-toolbar">
+    <span id="product-count" class="product-count"></span>
+    <select id="sort-select" class="sort-select" title="Sort products" aria-label="Sort products">
+      <option value="default">Sort: Default</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+      <option value="name-asc">Name: A to Z</option>
+    </select>
+  </div>
+
+  <section class="products-section">
+    <div class="products-grid" id="category-products"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">TechZone</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a><a href="category.html">Category</a>
+        <a href="about.html">About</a><a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 TechZone Computer Store. All rights reserved.</p>
+  </footer>
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="bn-item"><span class="bn-icon">&#8962;</span><span class="bn-label">Home</span></a>
+    <a href="category.html" class="bn-item active"><span class="bn-icon">&#9783;</span><span class="bn-label">Shop</span></a>
+    <a href="about.html" class="bn-item"><span class="bn-icon">&#8505;</span><span class="bn-label">About</span></a>
+    <a href="contact.html" class="bn-item"><span class="bn-icon">&#9993;</span><span class="bn-label">Contact</span></a>
+    <a href="login.html" class="bn-item"><span class="bn-icon">&#128274;</span><span class="bn-label">Login</span></a>
+  </nav>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="product-modal">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-panel" id="cart-panel">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button type="button" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total:</span><strong id="cart-total">$0</strong></div>
+      <button type="button" class="cart-checkout-btn">Proceed to Checkout</button>
+      <button type="button" class="cart-continue-btn" onclick="closeCart()">Continue Shopping</button>
+    </div>
+  </aside>
+
+  <script src="js/products.js"></script>
+  <script src="js/category.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechZone - Computer Store</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/dark.css"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <a class="nav-brand" href="index.html"><i class="nav-logo">&#xf109;</i> TechZone</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="category.html">Category</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="btn-login">Login</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9790;</button>
+      <button type="button" class="cart-btn" id="cart-btn" aria-label="Cart">
+        Cart <span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="drawer" id="drawer">
+    <div class="drawer-header">
+      <span class="nav-brand">TechZone</span>
+      <button type="button" class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="category.html">Category</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <div class="drawer-footer">
+      <button type="button" class="theme-toggle-full" id="drawer-theme">Dark Mode</button>
+    </div>
+  </aside>
+
+  <!-- HERO SLIDESHOW -->
+  <section class="slideshow" id="slideshow">
+    <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1600&q=80')">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-tag">New Arrivals</span>
+        <h1>Next-Gen <span>Laptops</span></h1>
+        <p>Ultra-thin, lightning-fast &mdash; built for creators.</p>
+        <a href="category.html?filter=laptop" class="btn-primary">Shop Laptops &rarr;</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=1600&q=80')">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-tag">Gaming Setup</span>
+        <h1>Power Your <span>Gaming Rig</span></h1>
+        <p>High-performance desktops for ultimate gaming.</p>
+        <a href="category.html?filter=desktop" class="btn-primary">Shop Desktops &rarr;</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1601445638532-3c6f6c3aa1d6?w=1600&q=80')">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-tag">Accessories</span>
+        <h1>Complete Your <span>Workspace</span></h1>
+        <p>Keyboards, mice, monitors and more.</p>
+        <a href="category.html?filter=accessory" class="btn-primary">Shop Accessories &rarr;</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=1600&q=80')">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-tag">Components</span>
+        <h1>Build Your <span>Dream PC</span></h1>
+        <p>GPUs, RAM, SSDs &mdash; everything you need.</p>
+        <a href="category.html?filter=component" class="btn-primary">Shop Components &rarr;</a>
+      </div>
+    </div>
+    <button type="button" class="slide-arrow slide-prev" id="slide-prev" aria-label="Previous slide">&#10094;</button>
+    <button type="button" class="slide-arrow slide-next" id="slide-next" aria-label="Next slide">&#10095;</button>
+    <div class="slide-dots" id="slide-dots">
+      <button type="button" class="dot active" data-index="0" aria-label="Slide 1"></button>
+      <button type="button" class="dot" data-index="1" aria-label="Slide 2"></button>
+      <button type="button" class="dot" data-index="2" aria-label="Slide 3"></button>
+      <button type="button" class="dot" data-index="3" aria-label="Slide 4"></button>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature-card">
+      <div class="feature-icon feat-delivery"></div>
+      <h3>Fast Delivery</h3><p>24-hour city delivery</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon feat-support"></div>
+      <h3>Expert Support</h3><p>24/7 tech assistance</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon feat-price"></div>
+      <h3>Best Prices</h3><p>Competitive pricing</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon feat-return"></div>
+      <h3>Easy Returns</h3><p>7-day return policy</p>
+    </div>
+  </section>
+
+  <!-- SHOP BY CATEGORY -->
+  <section class="cat-section">
+    <h2 class="section-title">Shop by Category</h2>
+    <div class="cat-grid">
+      <a href="category.html?filter=laptop" class="cat-card">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80" alt="Laptops" loading="lazy"/>
+        <div class="cat-overlay"><span>Laptops</span></div>
+      </a>
+      <a href="category.html?filter=desktop" class="cat-card">
+        <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=600&q=80" alt="Desktops" loading="lazy"/>
+        <div class="cat-overlay"><span>Desktops</span></div>
+      </a>
+      <a href="category.html?filter=accessory" class="cat-card">
+        <img src="https://images.unsplash.com/photo-1601445638532-3c6f6c3aa1d6?w=600&q=80" alt="Accessories" loading="lazy"/>
+        <div class="cat-overlay"><span>Accessories</span></div>
+      </a>
+      <a href="category.html?filter=component" class="cat-card">
+        <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=600&q=80" alt="Components" loading="lazy"/>
+        <div class="cat-overlay"><span>Components</span></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="products-section">
+    <h2 class="section-title">Featured Products</h2>
+    <div class="products-grid" id="featured-products"></div>
+  </section>
+
+  <!-- PROMO BANNER -->
+  <section class="promo-banner">
+    <div class="promo-content">
+      <h2>Summer Sale &mdash; Up to 40% Off</h2>
+      <p>Limited time deals on top brands</p>
+      <a href="category.html" class="btn-primary">View All Deals &rarr;</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">TechZone</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="category.html">Category</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 TechZone Computer Store. All rights reserved.</p>
+  </footer>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="bn-item active"><span class="bn-icon">&#8962;</span><span class="bn-label">Home</span></a>
+    <a href="category.html" class="bn-item"><span class="bn-icon">&#9783;</span><span class="bn-label">Shop</span></a>
+    <a href="about.html" class="bn-item"><span class="bn-icon">&#8505;</span><span class="bn-label">About</span></a>
+    <a href="contact.html" class="bn-item"><span class="bn-icon">&#9993;</span><span class="bn-label">Contact</span></a>
+    <a href="login.html" class="bn-item"><span class="bn-icon">&#128274;</span><span class="bn-label">Login</span></a>
+  </nav>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="product-modal">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- CART -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-panel" id="cart-panel">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button type="button" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total:</span><strong id="cart-total">$0</strong></div>
+      <button type="button" class="cart-checkout-btn">Proceed to Checkout</button>
+      <button type="button" class="cart-continue-btn" onclick="closeCart()">Continue Shopping</button>
+    </div>
+  </aside>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

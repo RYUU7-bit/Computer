@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - TechZone</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/dark.css"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <a class="nav-brand" href="index.html">TechZone</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="category.html">Category</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="btn-login">Login</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9790;</button>
+      <button type="button" class="cart-btn" id="cart-btn" aria-label="Cart">Cart <span class="cart-count" id="cart-count">0</span></button>
+      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="drawer" id="drawer">
+    <div class="drawer-header">
+      <span class="nav-brand">TechZone</span>
+      <button type="button" class="drawer-close" id="drawer-close" aria-label="Close">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html">Home</a>
+      <a href="category.html">Category</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <div class="drawer-footer">
+      <button type="button" class="theme-toggle-full" id="drawer-theme">Dark Mode</button>
+    </div>
+  </aside>
+
+  <section class="page-header">
+    <h1>About TechZone</h1>
+    <p>Your trusted computer store since 2015</p>
+  </section>
+
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Who We Are</h2>
+      <p>TechZone is a leading computer store dedicated to providing the latest technology products. We believe everyone deserves quality tech at fair prices.</p>
+      <p>With over 10 years of experience, our experts help you find the perfect product &mdash; whether you are a student, gamer, or business professional.</p>
+      <a href="contact.html" class="btn-primary">Get In Touch &rarr;</a>
+    </div>
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80" alt="TechZone Store" loading="lazy"/>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="stat-card"><h2 class="stat-num" data-target="10">0</h2><p>Years Experience</p></div>
+    <div class="stat-card"><h2 class="stat-num" data-target="500">0</h2><p>Products</p></div>
+    <div class="stat-card"><h2 class="stat-num" data-target="10000">0</h2><p>Happy Customers</p></div>
+    <div class="stat-card"><h2 class="stat-num" data-target="50">0</h2><p>Expert Staff</p></div>
+  </section>
+
+  <section class="team-section">
+    <h2 class="section-title">Our Team</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Ahmed Hassan" loading="lazy"/>
+        <div class="team-card-body"><h3>Ahmed Hassan</h3><p>Founder &amp; CEO</p></div>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80" alt="Sara Ali" loading="lazy"/>
+        <div class="team-card-body"><h3>Sara Ali</h3><p>Head of Sales</p></div>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" alt="Omar Khalil" loading="lazy"/>
+        <div class="team-card-body"><h3>Omar Khalil</h3><p>Lead Technician</p></div>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80" alt="Layla Nour" loading="lazy"/>
+        <div class="team-card-body"><h3>Layla Nour</h3><p>Customer Support</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">TechZone</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a><a href="category.html">Category</a>
+        <a href="about.html">About</a><a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 TechZone Computer Store. All rights reserved.</p>
+  </footer>
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="bn-item"><span class="bn-icon">&#8962;</span><span class="bn-label">Home</span></a>
+    <a href="category.html" class="bn-item"><span class="bn-icon">&#9783;</span><span class="bn-label">Shop</span></a>
+    <a href="about.html" class="bn-item active"><span class="bn-icon">&#8505;</span><span class="bn-label">About</span></a>
+    <a href="contact.html" class="bn-item"><span class="bn-icon">&#9993;</span><span class="bn-label">Contact</span></a>
+    <a href="login.html" class="bn-item"><span class="bn-icon">&#128274;</span><span class="bn-label">Login</span></a>
+  </nav>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-panel" id="cart-panel">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button type="button" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total:</span><strong id="cart-total">$0</strong></div>
+      <button type="button" class="cart-checkout-btn">Proceed to Checkout</button>
+      <button type="button" class="cart-continue-btn" onclick="closeCart()">Continue Shopping</button>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
